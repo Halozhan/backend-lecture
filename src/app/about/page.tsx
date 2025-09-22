@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Profile from "./profile";
 
 export const metadata: Metadata = {
-  title: "About me",
+  title: { absolute: "About me" },
   description: "나에 대해서",
 };
 

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "나의 웹 앱",
+  title: { default: "나의 웹 앱", template: "%s | Next.js 스터디" },
   description: "나의 웹 앱에 의해 생성됨",
 };
 
