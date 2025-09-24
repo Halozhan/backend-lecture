@@ -1,9 +1,20 @@
+import Link from "next/link";
+
 export default function Page() {
+  const products = [155, 235, 388, 412, 578];
+
   return (
     <div>
-      <h2>Product1</h2>
-      <h2>Product2</h2>
-      <h2>Product3</h2>
+      <Link href="/">Home</Link>
+      <br />
+      {products.map((value, index) => {
+        return (
+          <div key={index}>
+            key: {index} -{" "}
+            <Link href={`/product/${value}`}>Product {value}</Link>
+          </div>
+        );
+      })}
     </div>
   );
 }
