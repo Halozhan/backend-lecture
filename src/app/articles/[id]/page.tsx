@@ -1,11 +1,8 @@
 "use client";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useParams } from "next/navigation";
 
-interface ArticlePageProps {
-  params: { id: string };
-}
-
-export default function ArticlePage({ params }: ArticlePageProps) {
+export default function ArticlePage() {
+  const params = useParams();
   const { id } = params;
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || "en";
