@@ -1,3 +1,26 @@
+import { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Auth Page",
+  description: "This is Auth page",
+};
+
+const navLinks = [
+  {
+    name: "Register",
+    href: "/register",
+  },
+  {
+    name: "Login",
+    href: "/login",
+  },
+  {
+    name: "Forgot Password",
+    href: "/forgot-password",
+  },
+];
+
 export default function AuthLayout({
   children,
 }: {
@@ -5,7 +28,13 @@ export default function AuthLayout({
 }) {
   return (
     <div>
-      <h1>Auth 페이지에만 보이는 헤더입니다.</h1>
+      {navLinks.map((link) => {
+        return (
+          <Link key={link.name} href={link.href}>
+            {link.name}
+          </Link>
+        );
+      })}
       {children}
     </div>
   );
