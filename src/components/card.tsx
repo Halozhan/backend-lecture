@@ -3,7 +3,7 @@ export const Card = ({ children }: { children: React.ReactNode }) => {
     margin: "4px",
     border: "1px solid #ccc",
     borderRadius: "8px",
-    padding: "16px",
+    padding: "100px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
     display: "flex",
     justifyContent: "center",
