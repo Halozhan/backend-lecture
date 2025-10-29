@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export function middleware(request: Request) {
   if (request.nextUrl.pathname === "/profile") {
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.rewrite(new URL("/", request.url));
   }
 }
 
