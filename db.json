@@ -5,5 +5,19 @@
         "followers": 200,
         "following": 180
     },
-    "news": []
+    "news": [],
+    "events": [
+        {
+            "id": 1,
+            "title": "Annual Meetup",
+            "date": "2024-09-15",
+            "location": "New York"
+        },
+        {
+            "id": 2,
+            "title": "Tech Conference",
+            "date": "2024-10-20",
+            "location": "San Francisco"
+        }
+    ]
 }
