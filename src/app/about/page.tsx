@@ -1,16 +1,9 @@
-import { Metadata } from "next";
-import Profile from "./profile";
-
-export const metadata: Metadata = {
-  title: { absolute: "About me" },
-  description: "나에 대해서",
-};
-
-export default function Page() {
+export default function AboutPage() {
+  // 서버 콘솔에서 처리되는 로직이다.
+  console.log("About Page Rendered");
   return (
     <div>
       <h1>About Page</h1>
-      <Profile />
     </div>
   );
 }
